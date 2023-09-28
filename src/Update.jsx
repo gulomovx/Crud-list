@@ -24,7 +24,7 @@ const Update = () => {
 
   return (
     <div className="flex w-full content-center  h-screen justify-center items-center">
-      <div className="w-[50%] border  bg-slate-500 text-white p-6 rounded-lg ">
+      <div className=" w-full border  bg-slate-500 text-white  rounded-lg ">
         <h1 className="text-4xl text-center text-blue-500 font-medium mb-4">Update  user</h1>
         <form onSubmit={handleUpdate} className="w-full text-center">
           <div>
@@ -35,7 +35,7 @@ const Update = () => {
               name="name"
               value={uname}
               onChange={e=>setName(e.target.value)}
-              className="form-control rounded  w-[50%] p-2 outline-none text-slate-700 mx-auto mb-4"
+              className="form-control rounded  w-[50%] p-2 outline-none text-slate-700 mx-auto mb-4 "
             />
           </div>
           <div>

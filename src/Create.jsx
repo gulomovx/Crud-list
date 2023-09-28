@@ -23,7 +23,7 @@ const Create = () => {
 
   return (
     <div className="flex w-full content-center h-screen justify-center items-center">
-      <div className="w-[50%] border  bg-slate-500 text-white p-6 rounded-lg ">
+      <div className="w-full   border  bg-slate-500 text-white p-6 rounded-lg ">
         <h1 className="text-3xl text-blue-500 font-medium">Add new user</h1>
         <form onSubmit={handleSubmit} className="w-full ">
           <div>
@@ -33,7 +33,7 @@ const Create = () => {
               type="text"
               name="name"
               onChange={(e) => setName(e.target.value)}
-              className="form-control rounded  w-[50%] p-2 outline-none text-slate-700"
+              className="form-control rounded  w-full p-2 outline-none text-slate-700 sm:w-[50%] lg:w-[50%]"
             />
           </div>
           <div>
@@ -43,7 +43,7 @@ const Create = () => {
               type="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="form-control rounded w-[50%] p-2 outline-none text-slate-700"
+              className="form-control rounded w-full sm:w-[50%] p-2 outline-none text-slate-700"
             />
           </div>
           <br />
